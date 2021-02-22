@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="../assets/css/scrollbar.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/print.css">
+    <style>
+        .global-stat-menu-item{
+            cursor: pointer;
+        }
+        .global-stat-menu-item:hover{
+            transition: 300ms;
+            background-color: rgba(0, 0, 0, 0.2);
+            transform: scale(0.99);
+        }
+        .global-stat-menu-item:active{
+            transition: 300ms;
+            transform: scale(0.95);
+        }
+        #content #view{
+            padding: 20px;
+            width: 90%;
+        }
+        #content #view .table {
+            border: solid 1px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 10px;
+        }
+        #content #view .table .table-title tr:first-of-type{
+            border-radius: 40px;
+        }
+        /* #content #view #form-update-zone {
+            width: 60%;
+        } */
+        </style>
+</head>
+<body>
+    
+    
+    <div style="height: max-content;" id="container">
+        <div style="height: max-content;"  class="container-white-line">
+            <div id="top"></div>
+            <!-- header du site -->
+            <header  class="menu">
+                <div class="menu-item-toggler">       
+                    <a data_toggle_menu="" class="menu-item-left-text" href="#"><i class="fa far fa-minus-square"></i></a>
+                </div>
+                <div class="menu-elements">
+                    <ul>
+                        <li data_menu_name="produits"><a href="dashboard.html">Tableau de bord</a></li>
+                        <li data_menu_name="produits"><a href="produits.html"> Produits</a></li>
+                        <li data_menu_name="paniers"><a href="panier.html"> Panier</a></li>
+                        <li data_menu_name="ventes"><a href="ventes.html"> Stats des Ventes</a></li>
+                        <li data_menu_name="webStats"><a href="stats.html"> Stats du site</a></li>
+                        <li data_menu_name="webStats"><a href="messages.html">Messages</a></li>
+                        <li data_menu_name="webStats"><a href="index.html">Deconnexion</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <section id="content">
+                <div class="content-title">
+                    <h1>Admin|Ventes.</h1>
+                </div>
+                <div class="global-stat">
+                    <ul class="global-stat-menu">
+                        <li data-produit-add class="global-stat-menu-item">
+                            <span class="global-stat-menu-item-title">Listes des clients par produits</span>
+                        </li>
+                        <li data-fiche-stock class="global-stat-menu-item">
+                            <span class="global-stat-menu-item-title">Fiches des stocks</span>
+                        </li>
+                    </ul>
+                </div>
+                <div id="view">
+                </div>
+                <!-- <div id="form-update-zone">
+
+                </div> -->
+            </section>
+
+        </div>
+    </div>
+    <a href="#top" id="gotop"><i class="fa fas fa-arrow-up"></i></a>
+    <footer class="footer">
+        <div class="footer-text">
+            <span class="footer-text-name"><i class="fa far fa-copyright"></i> Sele Shabani | 2020</span>
+        </div>
+        <div class="footer-social">
+            <a href=""><i class="fa fab fa-github"></i></a>
+            <a href=""><i class="fa fab fa-facebook"></i></a>
+            <a href=""><i class="fa fab fa-google"></i></a>
+        </div>
+    </footer>
+    <script type="module" src="../src/admin/index.js"></script>
+    <script type="module" src="../src/admin/ventes.js"></script>
+</body>
+</html>

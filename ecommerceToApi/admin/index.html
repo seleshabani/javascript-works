@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../assets/css/accueil.css">
+    <link rel="stylesheet" href="../assets/css/scrollbar.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/mobile.css">
+    <style>
+        #content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        #content .content-title{
+            width: 40%;
+        }
+        #content .global-stat{
+            width: 50%;
+            border: solid 1px rgba(0, 0,0, 0.2);
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    
+    <div style="height: max-content;"  id="container">
+        <div style="height: max-content;" class="container-white-line">
+            <div id="top"></div>
+            <!-- header du site -->
+            <header  class="menu">
+                <div class="menu-item-toggler">       
+                    <a data_toggle_menu class="menu-item-left-text" href="#"> <i class="fa far fa-minus-square"></i> </a>
+                </div>
+            </header>
+            <div class="menu-elements">
+                    
+            </div>
+
+            <section id="content">
+                <div class="content-title">
+                    <h1>Admin|Login.</h1>
+                    <h2 class="notify"></h2>
+                </div>
+                <div class="global-stat">
+                   <div class="global-stat-menu">
+                    <form class="form" action="">
+                        <div class="form-item">
+                            <label for="">nom</label>
+                            <input name="mail" class="form-item-input" type="email">
+                        </div>
+                        <div class="form-item">
+                            <label for="">Mot de passe</label>
+                            <input name="pass" class="form-item-input" type="password">
+                        </div>
+                        <div class="form-item">
+                            <button class="form-item-input btn">Envoyer</button>
+                        </div>
+                    </form>
+                   </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <a href="#top" id="gotop"><i class="fa fas fa-arrow-up"></i></a>
+    <footer class="footer">
+        <div class="footer-text">
+            <span class="footer-text-name"><i class="fa far fa-copyright"></i> Sele Shabani | 2020</span>
+        </div>
+        <div class="footer-social">
+            <a href=""><i class="fa fab fa-github"></i></a>
+            <a href=""><i class="fa fab fa-facebook"></i></a>
+            <a href=""><i class="fa fab fa-google"></i></a>
+        </div>
+    </footer>
+    <script type="module" src="../src/admin/index.js"></script>
+    <script type="module" src="../src/admin/login.js"></script>
+</body>
+</html>

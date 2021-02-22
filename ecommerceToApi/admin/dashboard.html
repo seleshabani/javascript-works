@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="../assets/css/scrollbar.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+</head>
+<style>
+    #content .content-title{
+        width: 40%;
+        height: 100px;
+        padding: 10px;
+    }
+</style>
+<body>
+    
+    
+    <div style="height: max-content;" id="container">
+        <div style="height: max-content;" class="container-white-line">
+            <div id="top"></div>
+            <!-- header du site -->
+            <header  class="menu">
+                <div class="menu-item-toggler">       
+                    <a data_toggle_menu="" class="menu-item-left-text" href="#"><i class="fa far fa-minus-square"></i></a>
+                </div>
+                <div class="menu-elements">
+                    <ul>
+                        <li data_menu_name="produits"><a href="produits.html"> Produits</a></li>
+                        <li data_menu_name="paniers"><a href="panier.html"> Panier</a></li>
+                        <li data_menu_name="ventes"><a href="ventes.html"> Stats des Ventes</a></li>
+                        <li data_menu_name="webStats"><a href="stats.html"> Stats du site</a></li>
+                        <li data_menu_name="webStats"><a href="messages.html">Messages</a></li>
+                        <li data_menu_name="webStats"><a href="index.html"> Deconnexion</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <section id="content">
+                <div class="content-title">
+                    <h1>Admin|Dashboard.</h1>
+                </div>
+                <div class="global-stat">
+                    <ul class="global-stat-menu">
+                        <li class="global-stat-menu-item">
+                            <span class="global-stat-menu-item-title">Paniers Invalide :</span>
+                            <span data-panier-invalide="" class="global-stat-menu-item-content"></span>
+                        </li>
+                        <li class="global-stat-menu-item">
+                            <span class="global-stat-menu-item-title">Paniers Valide :</span>
+                            <span data-panier-valide="" class="global-stat-menu-item-content"></span>
+                        </li>
+                        <li class="global-stat-menu-item">
+                            <span class="global-stat-menu-item-title">Clients :</span>
+                            <span data-clients class="global-stat-menu-item-content"></span>
+                        </li>
+                        <li class="global-stat-menu-item">
+                            <span class="global-stat-menu-item-title">Produits :</span>
+                            <span data-produits class="global-stat-menu-item-content"></span>
+                        </li>
+                        <li class="global-stat-menu-item">
+                            <span class="global-stat-menu-item-title">Total ventes :</span>
+                            <span data-total-ventes="" class="global-stat-menu-item-content"></span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <a href="#top" id="gotop"><i class="fa fas fa-arrow-up"></i></a>
+    <footer class="footer">
+        <div class="footer-text">
+            <span class="footer-text-name"><i class="fa far fa-copyright"></i> Sele Shabani | 2020</span>
+        </div>
+        <div class="footer-social">
+            <a href=""><i class="fa fab fa-github"></i></a>
+            <a href=""><i class="fa fab fa-facebook"></i></a>
+            <a href=""><i class="fa fab fa-google"></i></a>
+        </div>
+    </footer>
+    <script type="module" src="../src/admin/index.js"></script>
+    <script type="module" src="../src/admin/dashboard.js"></script>
+</body>
+</html>

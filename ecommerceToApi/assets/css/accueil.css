@@ -1,0 +1,110 @@
+#container,.container-white-line {
+    height: max-content;
+}
+#content {
+    padding: 20px;
+    width: 90%;
+    align-self: center;
+}
+#content .row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+#content .row-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+#content .row-1 .citation{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#content .row-1 .citation .text{
+    width: 60%;
+    height: max-content;
+}
+#content .row-1 .citation #empty_cart{
+    width: 40%;
+    height: 100%;
+}
+#feuille_bleu,#tshirt{
+    fill: var(--color-hover);
+}
+.annonce-img {
+    border-radius: 10px;
+    height: 20vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.annonce-img .annonce-img-img {
+    height: 60vh;
+    width: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: adSlider 5000ms ease-in 300ms infinite;
+}
+.annonce-img .annonce-img-img img {
+    height: 20vh;
+}
+
+/* .card-top-products {
+
+} */
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    width: 30vw;
+    height: 20vh;
+    margin-top: 25px;
+    margin-left: 10px;
+    padding: 20px;
+     /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); */
+ }
+.card .card-title {
+     display: none;
+ }
+.card .card-image {
+     width: 20vw;
+     margin: 5px 5px;
+ }
+.card .card-image img {
+     border-radius: 5px;
+ }
+.card .card-content {
+     width: 15vw;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .btnBoutique {
+    display: inline-block;
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+@keyframes adSlider {
+    0% {
+        transform: translateY(0vh);
+    }
+    50%{
+        transform: translateY(-20vh);
+    }
+    100%{
+        transform: translateY(-40vh);        
+    }
+}
